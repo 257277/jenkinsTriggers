@@ -7,7 +7,7 @@ pipeline{
             }
         }
     }
-    stage("B")
+    stages("B")
     {
         steps{
             echo "first commit after aetting github webhook"
