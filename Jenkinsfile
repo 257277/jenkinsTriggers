@@ -6,11 +6,12 @@ pipeline{
                 echo "========executing A========"
             }
         }
-    }
-    stages("B")
-    {
-        steps{
-            echo "first commit after aetting github webhook"
+        stage("B")
+        {
+            steps{
+                echo "first commit after aetting github webhook"
+            }
         }
     }
+    
 }
