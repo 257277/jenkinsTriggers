@@ -9,7 +9,13 @@ pipeline{
         stage("B")
         {
             steps{
-                echo "first commit after aetting github webhook"
+                echo "first commit after setting github webhook"
+            }
+        }
+         stage("C")
+        {
+            steps{
+                echo "first commit after setting Poll SCM"
             }
         }
     }
